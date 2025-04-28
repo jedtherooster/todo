@@ -10,11 +10,20 @@ app.use(bodyParser.urlencoded());
 app.use(express.static('public'));
 
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("index.ejs", {
+        tasks: tasks,
+    });
 });
 
 app.post("/submit", (req, res) => {
-    res.render("index.ejs");
+    const task = req.body.taskInput;
+    
+    tasks.push(task);
+    console.log(tasks);
+
+    res.render("index.ejs", {
+        tasks: tasks,
+    });
 });
 
 app.listen(port, (req, res) => {
