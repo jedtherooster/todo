@@ -19,6 +19,10 @@
     border-radius: 35px 35px 0px 0px;
     height: 600px;
     width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title-tasks {
@@ -35,4 +39,14 @@
     color: #000000aa;
     letter-spacing: 6px;
     font-family: Helvetica, sans-serif;
+}
+
+#task-input {
+    border: none;
+    border-radius: 25px;
+    background-color: #F8F8F8;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 30px;
+    filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.119));
 }

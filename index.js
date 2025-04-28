@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
 });
 
+app.post("/submit", (req, res) => {
+    res.render("index.ejs");
+});
+
 app.listen(port, (req, res) => {
     console.log(`Server running on port ${port}`);
 });
