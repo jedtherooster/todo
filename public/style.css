@@ -54,8 +54,16 @@
 }
 
 li {
+    width: fit-content;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.675);
+}
+
+.task-item {
     list-style: none;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
@@ -66,5 +74,14 @@ li {
     background-color: #F8F8F8;
     border-radius: 25px;
     padding: 20px;
+    width: 300px;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+.bi-trash:hover {
+    color: red;
+}
