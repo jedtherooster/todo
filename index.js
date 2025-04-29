@@ -15,11 +15,14 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/delete/:id", (req, res) => {
+    
+});
+
 app.post("/submit", (req, res) => {
     const task = req.body.taskInput;
     
     tasks.push(task);
-    console.log(tasks);
 
     res.render("index.ejs", {
         tasks: tasks,
