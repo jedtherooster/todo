@@ -7,7 +7,8 @@
 
 .container {
     background-color: #F7F9FB;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +18,8 @@
     background-color: white;
     filter: drop-shadow(3px 75px 31px rgba(0, 0, 0, 0.172));
     border-radius: 35px 35px 0px 0px;
-    min-height: 625px;
-    max-height: fit-content;
+    min-height: 85vh;
+    height: fit-content;
     width: 450px;
     display: flex;
     flex-direction: column;
